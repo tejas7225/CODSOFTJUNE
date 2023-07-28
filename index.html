@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <h1>Tejas Khatkar</h1>
+
+        <section class="menu">
+            <ul class="menu_list">
+                <li>Home</li>
+                <li class="active">Products</li>
+                <li>About Me</li>
+                <li>Contact Me</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+        <section class="main">
+            <section class="left">
+                <p class="title">Internship at CODESOFT</p>
+                <p class="msg">Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</p>
+                <button class="cta">Learn More</button>
+            </section>
+            <section class="right">
+                <img src="images/photo.png" alt="web development">
+            </section>
+        </section>
+
+        <script>
+            var menu = document.querySelector('.menu');
+            var menuBtn = document.querySelector('.menu button');
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('opened')
+            })
+        </script>
+    
+</body>
+</html>
